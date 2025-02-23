@@ -1,0 +1,3 @@
+This bug demonstrates a common type error in TypeScript. The function `printTwice` expects a string argument, but the function `greet` returns a string, and then it's printed twice using printTwice function.  The issue arises when you try to assign the return value of `greet` (which is a string) to a variable and then pass it to `printTwice`.
+
+The solution involves correctly typing the `printTwice` function to accept a string or void type.
